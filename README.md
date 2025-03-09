@@ -1,58 +1,56 @@
-<h1>
-Online Banking Application
-</h1>
-<h3> Project Description</h3>
+# Library Management System
 
-<p>Banking Operations Description - The Online Banking Application is a Console-based application that simulates banking operations. A customer can apply for an account, view their balance, and make withdrawals and deposits. An employee can aprove or deny accounts and view account balances for their customers.  Ex: * A withdrawal that would result in a negative balance. * A deposit or withdrawal of negative money. * As an employee, I can approve or reject an account. * As an employee, I can view a customer's bank accounts. * As a user, I can register for a customer account. * As a customer, I can post a money transfer to another account. * As a customer, I can accept a money transfer from another account. * A an employee, I can view a log of all transactions. </p>
+## Project Description
+The **Library Management System** is a console-based application that simulates basic library operations. Customers (members) can borrow and return books, check available books, and pay overdue fines. Employees (librarians) manage the book inventory, issue books to members, and maintain transaction logs.
 
+### Key Features:
+- **Customer Features:**
+  - Register as a library member
+  - View available books in the library
+  - Borrow and return books
+  - Check and pay overdue fines
 
-<h3>Technology Used</h3>
-<ul>
-  <li>
-    Java 8
-  </li>  
-   <li>
-    PostgreSQL
-  </li>
-   <li>
-   JDBC
-  </li>
-   <li>
-    JUnit
-  </li>
-  <li>
-  Log4j
-  </li>
-  
-  </ul>
-  
-  <h3>Features</h3>
- <ul>
-  <li>Employee and Customer will be able to signup with valid details and while signing in their details are getting validated, if the credentials are wrong they are asked to input their credentials again otherwise  they logged in into their dashboard</li>
-    <li>Both Employee and Customer Module will be able to perform all the required activity with this application.</li>
-    <li>User module will be able to manage the employees and the customers based on the requirements.</li>
-  <li>Implementation of Exception handling and Logging working perfectly in thuis application</li>
-</ul>
-   
-   <h5>   To-do List</h5>
- <ul>
-  <li>Implementation on Cheque Book module with this application.</li>  
-   <li>Providing best user interaction with this application.</li>
-   <li>Generate Unique Card Number with a pin to make the transactions without signing in.</li>
-</ul>
-   
+- **Employee Features:**
+  - Add, remove, and update books in the library
+  - Issue and return books to members
+  - View member account details and transaction history
+  - Generate logs of all transactions
 
+### System Validation:
+- Prevent customers from borrowing more books than the allowed limit.
+- Reject book returns that have already been processed.
+- Log all transactions, including book issues, returns, and fine payments.
 
-<h3>Getting Started</h3>
-<p>1. Start with this Github Repository</p>
-<p>2. Git clone to directory of your choice $ git clone https://github.com/vijaychaurasiya/bank_management_system.git</p>
+## Technologies Used
+This project is built using the following technologies:
+- **Java 8**: For programming logic and functionality
+- **PostgreSQL**: For managing the database of books and members
+- **JDBC**: For database connectivity between Java and PostgreSQL
+- **JUnit**: For unit testing the application logic
+- **Log4j**: For logging events and debugging the application
 
-<p>3. Run the project on Eclipse</p>
+## Features
+- **Signup & Login**: Employees and customers can sign up and log in using their credentials to access respective dashboards.
+- **Customer Module**: Allows customers to view books, borrow and return them, and pay fines.
+- **Employee Module**: Allows employees to manage books, issue and return books, and track transactions.
+- **Logging**: Transactions are logged using **Log4j**, which makes it easier to track all actions.
 
+## To-Do List
+Future improvements and additional features for the system include:
+- **Book Reservation**: Allow customers to reserve books that are currently unavailable.
+- **User Interface Enhancements**: Enhance the user interaction for a better experience.
+- **Book Recommendations**: Add a feature to recommend books based on customer borrowing history.
 
-<h3>Usage</h3>
-<p>1. You habe to signup as your Requirement like as (User, Employee, Customer)</p>
+## Getting Started
 
-<p>2. Login with valid Credentials to access your dashboard.</p>
+### Prerequisites:
+Before running the project, ensure you have the following installed on your machine:
+- **Java 8 or higher**: Required to compile and run the application.
+- **PostgreSQL**: To store library and member data.
+- **Eclipse IDE**: Recommended for running the Java project.
 
-<p>3. After Successfully logged in into your dashboard you can perform the task regarding to your module.</p>
+### Installation:
+1. **Clone the Repository**:
+   Clone the GitHub repository to your local machine by running:
+   ```bash
+   git clone https://github.com/yourusername/library_management_system.git
