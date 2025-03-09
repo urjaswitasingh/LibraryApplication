@@ -1,15 +1,13 @@
 # Library Management System
 
 ## Project Description
-The **Library Management System** is a console-based application that simulates basic library operations. Customers (members) can borrow and return books, check available books, and pay overdue fines. Employees (librarians) manage the book inventory, issue books to members, and maintain transaction logs.
+The **Library Management System** is a REST application that simulates basic library operations. Customers (members) can borrow and return books, check available books. Employees (librarians) manage the book inventory, issue books to members, and maintain transaction logs.
 
 ### Key Features:
 - **Customer Features:**
   - Register as a library member
   - View available books in the library
   - Borrow and return books
-  - Check and pay overdue fines
-
 - **Employee Features:**
   - Add, remove, and update books in the library
   - Issue and return books to members
@@ -19,11 +17,11 @@ The **Library Management System** is a console-based application that simulates 
 ### System Validation:
 - Prevent customers from borrowing more books than the allowed limit.
 - Reject book returns that have already been processed.
-- Log all transactions, including book issues, returns, and fine payments.
+- Log all transactions, including book issues and returns.
 
 ## Technologies Used
 This project is built using the following technologies:
-- **Java 8**: For programming logic and functionality
+- **Java 17**: For programming logic and functionality
 - **PostgreSQL**: For managing the database of books and members
 - **JDBC**: For database connectivity between Java and PostgreSQL
 - **JUnit**: For unit testing the application logic
@@ -31,7 +29,7 @@ This project is built using the following technologies:
 
 ## Features
 - **Signup & Login**: Employees and customers can sign up and log in using their credentials to access respective dashboards.
-- **Customer Module**: Allows customers to view books, borrow and return them, and pay fines.
+- **Customer Module**: Allows customers to view books, borrow and return them.
 - **Employee Module**: Allows employees to manage books, issue and return books, and track transactions.
 - **Logging**: Transactions are logged using **Log4j**, which makes it easier to track all actions.
 
@@ -47,10 +45,10 @@ Future improvements and additional features for the system include:
 Before running the project, ensure you have the following installed on your machine:
 - **Java 8 or higher**: Required to compile and run the application.
 - **PostgreSQL**: To store library and member data.
-- **Eclipse IDE**: Recommended for running the Java project.
+- **IntelliJ**: Recommended for running the Java project.
 
 ### Installation:
 1. **Clone the Repository**:
    Clone the GitHub repository to your local machine by running:
    ```bash
-   git clone https://github.com/yourusername/library_management_system.git
+   git clone https://github.com/urjaswitasingh/LibraryApplication.git
